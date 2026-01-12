@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>addEventListener Example</title>
+  </head>
+
+  <body>
+
+    <button id="Button1" onclick="showMessage()">Button 1</button>
+    <button id="Button2">Button 2</button> 
+
+    
+
+    <script>
+        // Button 2 is used on real projects
+      function showMessage() {
+        alert("Button Clicked...");
+      }
+
+      const Button2 = document.getElementById("Button2");
+      Button2.addEventListener("click", showMessage);
+    </script>
+  </body>
+</html>
